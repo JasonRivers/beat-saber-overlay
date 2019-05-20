@@ -189,19 +189,20 @@ body {
 	--hide: cubic-bezier(0.55, 0.085, 0.68, 0.53) 200ms;
 }
 
-#overlay #beatmap, #overlay #performance > * {
+#overlay #beatmap, #overlay #performance > *, #fullcombo {
 	transition:
 		opacity var(--show),
 		transform var(--show);
 }
 
-#overlay.hidden #beatmap, #overlay.hidden #performance > * {
+#overlay.hidden #beatmap, #overlay.hidden #performance > *, #fullcombo.hidden {
 	opacity: 0;
 	transform: translate(0, 15px);
 	transition:
 		opacity var(--hide),
 		transform var(--hide);
 }
+
 
 #overlay #performance > *:nth-child(3) {
 	transition-delay: 100ms !important;
