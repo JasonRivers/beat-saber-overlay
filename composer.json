@@ -1,0 +1,5 @@
+{
+    "require": {
+        "zenthangplus/html-dom-parser": "^1.0"
+    }
+}

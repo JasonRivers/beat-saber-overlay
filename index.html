@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<title>Overlay</title>
 		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800" rel="stylesheet">
 	</head>
-	
+
 	<body>
 		<div id="overlay" class="hidden">
 			<div id="performance">
@@ -19,14 +19,14 @@
 					<span class="text" id="combo">0</span>
 					<span class="subtext" id="combolabel">Full Combo</span>
 				</div>
-				
+
 				<span id="score">0</span>
 			</div>
 
 			<div id="beatmap">
 				<div id="cover">
 					<img id="image">
-					
+
 					<svg width="90" height="90">
 						<rect width="90" height="90" id="darken"></rect>
 						<circle cx="45" cy="45" r="30" id="remaining"></circle>
@@ -47,7 +47,7 @@
 
 						<span id="artist">Artist</span>
 					</div>
-					
+
 					<div>
 						<span id="difficulty">Easy</span>
 						<span id="bpm">0 BPM</span>
@@ -56,11 +56,26 @@
 				</div>
 			</div>
 		</div>
+		<div id="pprank">
+			<div class="rank-group">
+				<span class="title">WORLD RANK</span>
+				<span class="subtext" id="worldRank"></span>
+			</div>
+			<div class="rank-group">
+				<span class="title">COUNTRY RANK</span>
+				<span class="subtext" id="countryRank"></span>
+			</div>
+			<div class="rank-group">
+				<span class="title">PP</span>
+				<span class="subtext" id="pp"></span>
+			</div>
+		</div>
 
 		<script src="./js/options.js"></script>
-		
+
 		<script src="./js/ui.js"></script>
 		<script src="./js/events.js"></script>
 		<script src="./js/manager.js"></script>
+		<script src="./js/stats.js"></script>
 	</body>
 </html>

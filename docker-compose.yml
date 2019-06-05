@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: jasonrivers/php:7
+    volumes:
+    - ${PWD}:/var/www/html
+    ports:
+    - 9998:80/tcp
+  composer:
+    image: composer
+    volumes:
+    - ${PWD}:/app
+    user: 1000:1000
+    command: update

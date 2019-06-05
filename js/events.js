@@ -13,6 +13,7 @@ const events = {
 		ui.beatmap(data.beatmap, time);
 		ui.performance(data.performance);
 		ui.show();
+                setTimeout(function() {stats.update()}, 10000);
 	},
 
 	noteCut(data) { ui.performance(data.performance); },
@@ -32,5 +33,6 @@ const events = {
 	menu() {
 		ui.timer.stop();
 		ui.hide();
+                setTimeout(function() {stats.update()},10000);
 	}
 }
