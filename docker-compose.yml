@@ -10,5 +10,5 @@ services:
     image: composer
     volumes:
     - ${PWD}:/app
-    user: 1000:1000
+    user: 6103:6116
     command: update
